@@ -46,7 +46,7 @@ function App() {
     return () => {
       socket.close();
     };
-  }, [userJoined, roomId]);
+  }, [roomId]);
 
   const handleJoinRoom = () => {
     setUserJoined(true);
